@@ -41,9 +41,9 @@ class evamaria(Client):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ['API_ID','11604258'])
-API_HASH = environ['API_HASH','447e00413945ab1a61882f9e474477d6']
-BOT_TOKEN = environ['BOT_TOKEN',"5933338256:AAFqxvkqZ1FCtjy3f8VFYW0oDXGsVOM2fa4"]
+API_ID = int(environ.get('API_ID','11604258')
+API_HASH = environ('API_HASH','447e00413945ab1a61882f9e474477d6')
+BOT_TOKEN = environ('BOT_TOKEN',"5933338256:AAFqxvkqZ1FCtjy3f8VFYW0oDXGsVOM2fa4")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -86,7 +86,7 @@ DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 #url links
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shorturllink.in')
 SHORTLINK_API = environ.get('SHORTLINK_API', '3a3935e37c74a2384f7a689c414f078ab6320785')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True ))
 
 #Auto approve 
 #In private group or channel must enable request admin approval 
